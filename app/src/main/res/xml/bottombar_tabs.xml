@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+        id="@+id/tab_top"
+        icon="@mipmap/ic_launcher"
+        title="首页"
+        barColorWhenSelected="#fff" />
+    <tab
+        id="@+id/tab_news"
+        icon="@mipmap/ic_launcher"
+        title="要闻"
+        barColorWhenSelected="#fff" />
+    <tab
+        id="@+id/tab_mine"
+        icon="@mipmap/ic_launcher"
+        title="我的"
+        barColorWhenSelected="#fff" />
+
+</tabs>

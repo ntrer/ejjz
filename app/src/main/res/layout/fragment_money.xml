@@ -1,0 +1,153 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="收银汇总"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_below="@id/toolbar"
+        >
+
+        <TextView
+            android:id="@+id/mounth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="本月"
+            android:textColor="@drawable/text_select"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/more"-->
+            <!--android:layout_width="@dimen/dp_48"-->
+            <!--android:layout_height="@dimen/dp_48"-->
+            <!--android:paddingLeft="@dimen/dp_10"-->
+            <!--android:paddingRight="@dimen/dp_10"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@mipmap/more"-->
+            <!--/>-->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/TabLayout"
+        android:background="#eee"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_home"
+        android:layout_below="@id/TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_330"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_no_data" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="暂无数据"
+            android:textColor="@color/darker_gray"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/boom"-->
+        <!--android:layout_below="@id/toolbar"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="@dimen/dp_400"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:background="@color/white"-->
+        <!--android:visibility="invisible"-->
+        <!--&gt;-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rv_sign2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--/>-->
+
+    <!--</FrameLayout>-->
+
+</RelativeLayout>

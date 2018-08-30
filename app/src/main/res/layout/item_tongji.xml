@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/touxiang"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginStart="@dimen/dp_10"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/md_black_1000"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="刘总"
+            />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/md_black_1000"
+            android:drawableStart="@mipmap/address"
+            android:drawablePadding="@dimen/dp_5"
+            android:layout_below="@id/num"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:text="安阳数尚"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/label"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/md_black_1000"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text=""
+            />
+    </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line"
+        />
+</LinearLayout>

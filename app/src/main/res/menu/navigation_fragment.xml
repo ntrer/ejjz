@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_fragment_zero"
+        android:icon="@drawable/bottom_tab1_select"
+        android:title="首页" />
+
+    <item
+        android:id="@+id/navigation_fragment_one"
+        android:icon="@null"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_fragment_two"
+        android:icon="@drawable/bottom_tab2_select"
+        android:title="我的" />
+
+</menu>

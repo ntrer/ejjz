@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ToolBarStyle"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@android:color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="陌拜签到"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_margin="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:background="@mipmap/photo"
+        android:layout_height="@dimen/dp_180"/>
+
+     <LinearLayout
+         android:layout_marginLeft="@dimen/dp_20"
+         android:layout_marginRight="@dimen/dp_20"
+         android:layout_marginTop="@dimen/dp_10"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <ImageView
+             android:layout_width="@dimen/dp_30"
+             android:layout_height="@dimen/dp_30"
+             android:src="@mipmap/sign_time"
+             />
+         <TextView
+             android:layout_marginLeft="@dimen/dp_10"
+             android:layout_gravity="center_vertical"
+             android:text="@string/sign_time"
+             android:textColor="@color/colorPrimary"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+         <TextView
+             android:id="@+id/sign_time"
+             android:layout_marginLeft="@dimen/dp_10"
+             android:layout_gravity="center_vertical"
+             android:text=""
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+     </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/louhao"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/sign_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/sign_address"
+            style="?android:attr/textViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:hint="输入具体楼号"
+            android:textColorHint="#ccc"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/location"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/sign_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/sign_map"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+</LinearLayout>

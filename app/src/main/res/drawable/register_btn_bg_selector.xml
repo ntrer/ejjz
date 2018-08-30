@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:state_pressed="true">
+       <shape android:shape="rectangle">
+           <corners android:radius="@dimen/dp_5"/>
+           <solid android:color="@color/btn_unfocused_color"/>
+       </shape>
+   </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dp_5"/>
+            <solid android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+</selector>

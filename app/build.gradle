@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "28.0.1"
+    defaultConfig {
+        applicationId "com.shushang.aishangjia"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //二维码扫描
+    compile project(path: ':libzxing')
+    //圆形图片
+
+    //字体图标
+
+    //网络请求依赖
+
+    //底部导航栏
+
+    //BRAVH
+
+    //下载库
+
+    //Gson
+
+    //aes加密
+    compile project(':mylibrary')
+    compile 'com.blankj:utilcode:1.17.2'
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
+    compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+    compile 'com.android.support:cardview-v7:26.+'
+    compile 'com.squareup.okio:okio:1.13.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    compile 'com.roughike:bottom-bar:2.0.2'
+    compile 'com.qianwen:update-app:3.5.2'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    compile 'cn.finalteam:okhttpfinal:2.0.7'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.githang:status-bar-compat:latest.integration'
+    compile 'com.scottyab:aescrypt:0.0.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.umeng.sdk:common:latest.integration'
+    compile 'com.umeng.sdk:analytics:latest.integration'
+    compile 'com.necer.ncalendar:ncalendar:2.4.6'
+    compile 'com.azhon:suspension-fab:1.1.0'
+    compile 'com.amap.api:location:latest.integration'
+    compile 'com.contrarywind:Android-PickerView:4.1.6'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+//    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    compile 'com.github.CodingEnding:PopupLayout:v1.0'
+    testCompile 'junit:junit:4.12'
+}

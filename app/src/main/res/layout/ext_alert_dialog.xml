@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:background="@drawable/dialog_normal_shap"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ext_dialog_hasTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ext_dialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="文字"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="@color/color_maintext"
+            android:textSize="@dimen/sp_17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#bcbcbc" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ext_dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_60"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:text="文字"
+        android:textColor="#353535"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:background="#c8c7cc" />
+
+    <Button
+        android:id="@+id/ext_dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/extdialog_button_style"
+        android:text="@string/confirm"
+        android:textColor="@color/color_maintext"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>
